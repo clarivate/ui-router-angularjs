@@ -13,5 +13,5 @@ util.ensureCleanMaster('master');
 packageJson.name = 'angular-ui-router';
 fs.writeFileSync(packagePath, JSON.stringify(packageJson, null, 2));
 
-_exec(`npm publish`);
+_exec(`npm publish --access public`);
 _exec(`git checkout package.json`);
